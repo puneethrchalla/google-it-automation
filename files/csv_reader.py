@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 import csv
 
-f = open("airtravel.csv")
-csv_f = csv.reader(f)
+file = open("hosts.csv")
+csv_f = csv.reader(file)
 
 for row in csv_f:
-    print(row)
-f.close()
+    host, ip = row
+    print("Host: {}, IP: {}".format(host, ip))
+
+file.close()

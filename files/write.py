@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+import os
 
-with open('sample.log', 'w') as file:
-    pass
+with open('hello.txt', 'w') as file:
+    file.write("hello world, Puneeth!")
+
+os.system("df -h")
