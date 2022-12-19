@@ -24,4 +24,5 @@ class TestSwapName(unittest.TestCase):
         expected = "Puneeth"
         self.assertEqual(name_swap(testcase), expected)
 
-unittest.main()
+if __name__ == '__main__':
+    unittest.main()
